@@ -26,5 +26,11 @@ namespace Rent_A_Car.Models
 
 		[Required]
 		public string Availability { get; set; }
+
+		[Required]
+		public int ManufacturerId { get; set; }
+		public Manufacturer Manufacturer { get; set; }
+		
+		
 	}
 }

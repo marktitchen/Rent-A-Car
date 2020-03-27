@@ -19,13 +19,13 @@ namespace Rent_A_Car.Models
 
 		[DisplayFormat(DataFormatString = "{0: dd MMM yyyy}")]
 		public DateTime? ReturnDate { get; set; }
-		
-		public Car Car { get; set; }
+				
+		[Required]
 		public int CarId { get; set; }
-
+		public Car Car { get; set; }
 		
-
-		public Customer Customer { get; set; }
+		[Required]
 		public int CustomerId { get; set; }
+		public Customer Customer { get; set; }
 	}
 }
